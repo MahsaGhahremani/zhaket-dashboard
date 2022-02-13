@@ -1,0 +1,369 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: iransans;
+    src: url(./assets/fonts/sans_New/sans_New/icon.woff);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb.woff);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb.woff2);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb_Bold.woff);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb_Bold.woff2);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb_Light.woff);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb_Light.woff2);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb_Medium.woff);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb_Medium.woff2);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb_UltraLight.woff);
+    src: url(./assets/fonts/sans_New/sans_New/IRANSansWeb_UltraLight.woff2);
+}
+@media screen and (min-width: 576px){
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+@media screen and (min-width: 768px){
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+@media screen and (min-width: 992px){
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+
+body {
+    direction: rtl;
+    font-family: iransans;
+    background-color: #f3f4f6;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px;
+    /* width: 100%; */
+    /* max-width: 1200px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #343a40;
+}
+.right-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 50%;
+    border: 1px solid;
+}
+
+.right-navbar .logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    /* border: 1px solid white; */
+}
+
+.right-navbar .logo img {
+    width: 25px;
+    height: 45px;
+    padding-top: 20px;
+}
+
+.right-navbar .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(177, 177, 177);
+    padding: 20px 20px;
+    border: 2px solid white;
+    width: 40%;
+}
+.right-navbar .hamburger-logo {
+    font-size: 20px;
+    color: white;
+}
+.drop-menu{
+    background-color: white;
+    width: 175px;
+    height: 195px;
+    margin-top: 25px;
+    margin-right: -80px;
+    display: none;
+    list-style: none;
+    /* z-index: 1; */
+}
+.right-navbar>.menu>.item:hover .drop-menu{
+    display: block;
+    visibility: visible;
+    z-index: 1;
+}
+.item i {
+    font-size: 10px;
+    padding: 5px;
+}
+.left-navbar{
+    direction: ltr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 50%;
+    /* border: 1px solid; */
+}
+.left-navbar i{
+    font-size: 25px;
+    color: white;
+    padding: 22px;
+}
+.left-menu{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+    width: 260px;
+    height: 100%;
+    float: left;
+    display: none;
+    visibility: hidden;
+    /* border: 1px solid black; */
+}
+/* .left-menu .icons{
+    display: none;
+} */
+#checkbox{
+    display: none;
+}
+#setting:checked ~ .left-menu{
+    display: block;
+    visibility: visible;
+    background-color: #1abc9c;
+}
+
+
+
+.wraper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px;
+    width: 70px;
+}
+.side-menu{
+    background-color: white;
+    font-size: 17px;
+    color: #6e768e;
+    text-align: center;
+}
+.side-menu li i{
+    padding: 20px;
+}
+.tooltip{
+    display: none;
+    background-color: grey;
+    font-weight: bold;
+    /* margin-right: 25px; */
+    border: 1px solid black;
+}
+.side-menu> li:hover .tooltip{
+    display: block;
+    visibility: visible;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+   justify-content: flex-start;
+   border-radius: 5px;
+    /* border: 1px solid; */
+}
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid; */
+}
+.calender{
+
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 140px;
+    /* border: 1px solid; */
+    justify-content: space-around;
+    margin-right: 20px;
+}
+.analysis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* width: 330px; */
+    height: 120px;
+    background-color: white;
+    font-weight: bold;
+    margin-left: 25px;
+    /* margin-right: 10px; */
+    border: 1px solid;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+    margin: 25px;
+}
+.analysis:nth-child(1) .icon i{
+    font-size: 22px;
+    color:#6658dd;
+    padding: 5px;
+}
+.analysis:nth-child(1) .icon{
+    background-color: rgba(102, 88, 221, 0.25);
+    border: 1px solid #6658dd ;
+}
+.analysis:nth-child(2) .icon i{
+    font-size: 22px;
+    color:#1abc9c;
+    padding: 5px;
+}
+.analysis:nth-child(2) .icon{
+    background-color: rgba(26, 188, 156, 0.25);
+    border: 1px solid #1abc9c ;
+}
+.analysis:nth-child(3) .icon i{
+    font-size: 22px;
+    color:#4fc6e1;
+    padding: 5px;
+}
+.analysis:nth-child(3) .icon{
+    background-color: rgba(79, 198, 225, 0.25);
+    border: 1px solid #4fc6e1 ;
+}
+.analysis:nth-child(4) .icon i{
+    font-size: 22px;
+    color: #f7b84b;
+    padding: 5px;
+}
+.analysis:nth-child(4) .icon{
+    background-color: rgba(247, 184, 75, 0.25);
+    border: 1px solid #f7b84b;
+}
+.analysis .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    margin-left: 15px;
+    /* border: 1px solid black;      */
+}
+.analysis .text .description{
+    font-weight: bolder;
+    font-size: 15px;
+    color: grey;
+}
+.chart{
+    width: 445px;
+    height: 540px;
+    background-color: white;
+    padding: 24px;
+    /* border: 1px solid black; */
+}
+.chart-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.chart-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.market-table{
+    background-color: white;
+    padding: 24px;
+}
+table{
+    background-color: white;
+    width: 925px;
+    height:460px;
+    text-align: right;
+    /* border: 1px solid black; */
+    
+}
+table th{
+    background-color: #f3f7f9;
+    font-weight: 500px;
+    padding-right: 20px;
+}
+table tr td{
+    padding-right: 20px;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+}
+table tr:hover{
+    background-color: #f3f7f9;
+}
+table tr:nth-child(2) td:nth-child(4){
+    border: 1px solid pink;
+    background-color: pink;
+    border-radius: 5px;
+}
+table tr td:nth-child(5){
+    font-style: none;
+}
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        
+            <div class="right-navbar">
+                <div class="logo">
+                    <img src="./assets/images/logo-sm.png" alt="logo">
+                </div>
+
+                <div class="menu">
+                    <div class="hamburger-logo"><i class="fas fa-bars"></i></div>
+                    <div class="item">ایجاد جدید<i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><i class="fa-regular fa-suitcase"></i>پروژه جدید</li>
+                            <li><i class="fa-regular fa-user"></i>ایجاد کاربر</li>
+                            <li><i class="fa-thin fa-chart-simple"></i>گزارش</li>
+                            <li><i class="fa-regular fa-gear"></i>تنظیمات</li>
+                            <li><i class="fa-regular fa-headset"></i>راهنما و پشتیبانی</li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu">مگامنو<i class="fas fa-chevron-down"></i></div>
+                </div>
+            </div>
+        
+        <!-- <div class="left-navbar">
+            <label for="setting" id="setting"><i class="fas fa-cog"></i></label>
+            <input type="checkbox" id="checkbox">
+            <div class="left-menu">
+                <div class="icons">
+                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-comment-alt"></i>
+                </div>
+            </div>
+        </div> -->
+
+    </header>
+
+    <div class="wraper">
+        <!-- the vertical menu on the right side -->
+        <div class="col-lg- col-md-">
+        <nav class="vertical-menu">
+            <ul class="side-menu">
+                <li><i class="fas fa-desktop"></i></li>
+                <li><i class="far fa-calendar"></i>
+                <span class="tooltip">تقویم</span>
+                </li>
+                <li><i class="far fa-comment-alt"></i></li>
+                <li><i class="far fa-shopping-cart"></i></li>
+                <li><i class="far fa-user-friends"></i></li>
+                <li><i class="far fa-envelope"></i></li>
+                <li><i class="fas fa-wifi"></i></li>
+                <li><i class="fal fa-heart-rate"></i></li>
+                <li><i class="far fa-suitcase"></i></li>
+                <li><i class="far fa-clipboard-list"></i></li>
+                <li><i class="fal fa-book-alt"></i></li>
+            </ul>
+        </nav>
+        </div>
+        <!-- page content -->
+        <div class="content">
+            <!-- top bar with title and calender -->
+            <div class="dashboard"> 
+                <div class="page-title">داشبورد</div>    
+                <div class="calender"></div>
+            </div>
+             <!-- End of top bar with title and calender -->
+            
+                <div class="data">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="analysis">
+                        <div class="icon"><i class="far fa-heart"></i>
+                        </div>
+                         <div class="text">
+                            <div class="number">$58,947</div>
+                            <div class="description">مجموع درآمد</div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="analysis">
+                        <div class="icon"><i class="far fa-shopping-cart"></i>
+                        </div>
+                        <div class="text">
+                            <div class="number">127</div>
+                            <div class="description">فروش امروز</div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="analysis">
+                        <div class="icon"><i class="far fa-sort-alt"></i>
+                        </div>
+                        <div class="text">
+                            <div class="number">0.58%</div>
+                            <div class="description">تبدیل</div>
+                        </div>    
+                    </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="analysis">
+                        <div class="icon"><i class="far fa-eye"></i>
+                        </div>
+                        <div class="text">
+                            <div class="number">78.41k</div>
+                            <div class="description">بازدیدهای امروز</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                
+                <!-- <div class="chart-row">
+                    <div class="chart">
+                        <div class="chart-head">
+                        <h3>مجموع درآمد</h3>
+                        <div class="more"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                    </div>
+                    <div class="market-table">
+                        <div class="chart-head">
+                        <h3>سابقه درآمد</h3>
+                        <div class="more"><i class="fas fa-ellipsis-v"></i></div>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>بازارها</th>
+                                <th>تاریخ</th>
+                                <th>پرداخت‌ها</th>
+                                <th>وضعیت</th>
+                                <th>فعال</th>
+                            </tr>
+                            <tr>
+                                <td>تم مارکت</td>
+                                <td>Oct 15, 2018</td>
+                                <td>$5848.68</td>
+                                <td>پیش‌رو</th>
+                                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td>شکربن</td>
+                                <td>Oct 12, 2018</td>
+                                <td>$1247.25</td>
+                                <td>پیش‌رو</td>
+                                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td>شیرهولدینگ</td>
+                                <td>Oct 10, 2018</td>
+                                <td>$815.89</td>
+                                <td>پیش‌رو</td>
+                                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td>امواتو</td>
+                                <td>Oct 03, 2018</td>
+                                <td>$248.75</td>
+                                <td>پیش‌رو</td>
+                                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td>ویسپهر</td>
+                                <td>Sep 21, 2018</td>
+                                <td>$978.21</td>
+                                <td>پیش‌رو</td>
+                                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            </tr>
+
+                            <tr>
+                                <td>فولاد سرنگون</td>
+                                <td>Sep 15, 2018</td>
+                                <td>$358.10</td>
+                                <td>پیش‌رو</td>
+                                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                            </tr>
+                        </table>
+                </div>
+                </div> -->
+        </div>
+    </div>
+</body>
+</html>
